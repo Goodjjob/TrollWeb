@@ -1,0 +1,451 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Name>DjangoTest</Name>
+    <RootNamespace>DjangoTest</RootNamespace>
+    <InterpreterId>MSBuild|myvenv|$(MSBuildProjectFullPath)</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>0ec633e8-f52f-41a3-832b-d12eae303edb</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <DjangoSettingsModule>DjangoTest.settings</DjangoSettingsModule>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="manage.py" />
+    <Compile Include="DjangoTest\__init__.py" />
+    <Compile Include="DjangoTest\settings.py" />
+    <Compile Include="DjangoTest\urls.py" />
+    <Compile Include="DjangoTest\wsgi.py" />
+    <Compile Include="troll\admin.py" />
+    <Compile Include="troll\apps.py" />
+    <Compile Include="troll\migrations\__init__.py" />
+    <Compile Include="troll\models.py" />
+    <Compile Include="troll\tests.py" />
+    <Compile Include="troll\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="troll\views.py" />
+    <Compile Include="troll\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="requirements.txt" />
+    <Content Include="troll\exHtmls\admin-messages.html" />
+    <Content Include="troll\exHtmls\agents-detail.html" />
+    <Content Include="troll\exHtmls\listings-rows.html" />
+    <Content Include="troll\static\css\chartist.min.css" />
+    <Content Include="troll\static\css\explorer-blue.css" />
+    <Content Include="troll\static\css\explorer-gold.css" />
+    <Content Include="troll\static\css\explorer-orange.css" />
+    <Content Include="troll\static\css\explorer-purple.css" />
+    <Content Include="troll\static\css\explorer-red.css" />
+    <Content Include="troll\static\css\explorer-turquoise.css" />
+    <Content Include="troll\static\css\explorer.css" />
+    <Content Include="troll\static\css\jquery.raty.css" />
+    <Content Include="troll\static\css\nouislider.min.css" />
+    <Content Include="troll\static\css\trackpad-scroll-emulator.css" />
+    <Content Include="troll\static\fonts\font-awesome\css\font-awesome.css" />
+    <Content Include="troll\static\fonts\font-awesome\css\font-awesome.min.css" />
+    <Content Include="troll\static\fonts\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="troll\static\fonts\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="troll\static\fonts\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="troll\static\fonts\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="troll\static\fonts\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="troll\static\fonts\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="troll\static\img\caret-light.svg" />
+    <Content Include="troll\static\img\caret.svg" />
+    <Content Include="troll\static\img\cluster.png" />
+    <Content Include="troll\static\img\explorer-home-1.png" />
+    <Content Include="troll\static\img\favicon.png" />
+    <Content Include="troll\static\img\logo.svg" />
+    <Content Include="troll\static\img\tmp\ad-1.jpg" />
+    <Content Include="troll\static\img\tmp\demo-admin.jpg" />
+    <Content Include="troll\static\img\tmp\demo-automotive.jpg" />
+    <Content Include="troll\static\img\tmp\demo-classified.jpg" />
+    <Content Include="troll\static\img\tmp\demo-directory.jpg" />
+    <Content Include="troll\static\img\tmp\demo-job-board.jpg" />
+    <Content Include="troll\static\img\tmp\demo-real-estate.jpg" />
+    <Content Include="troll\static\img\tmp\demo-restaurant.jpg" />
+    <Content Include="troll\static\img\tmp\demo-travel.jpg" />
+    <Content Include="troll\static\img\tmp\feature-1.png" />
+    <Content Include="troll\static\img\tmp\feature-admin.jpg" />
+    <Content Include="troll\static\img\tmp\feature-angular2.jpg" />
+    <Content Include="troll\static\img\tmp\feature-jekyll.jpg" />
+    <Content Include="troll\static\img\tmp\feature-jekyll.png" />
+    <Content Include="troll\static\img\tmp\feature-symfony3.jpg" />
+    <Content Include="troll\static\img\tmp\feature-symfony3.png" />
+    <Content Include="troll\static\img\tmp\gallery-small-1.jpg" />
+    <Content Include="troll\static\img\tmp\gallery-small-2.jpg" />
+    <Content Include="troll\static\img\tmp\gallery-small-3.jpg" />
+    <Content Include="troll\static\img\tmp\hero-car.jpg" />
+    <Content Include="troll\static\img\tmp\hero-classified.jpg" />
+    <Content Include="troll\static\img\tmp\hero-restaurant.jpg" />
+    <Content Include="troll\static\img\tmp\hero-travel.jpg" />
+    <Content Include="troll\static\img\tmp\hero.jpg" />
+    <Content Include="troll\static\img\tmp\listing-1.jpg" />
+    <Content Include="troll\static\img\tmp\listing-10.jpg" />
+    <Content Include="troll\static\img\tmp\listing-11.jpg" />
+    <Content Include="troll\static\img\tmp\listing-12.jpg" />
+    <Content Include="troll\static\img\tmp\listing-13.jpg" />
+    <Content Include="troll\static\img\tmp\listing-14.jpg" />
+    <Content Include="troll\static\img\tmp\listing-15.jpg" />
+    <Content Include="troll\static\img\tmp\listing-16.jpg" />
+    <Content Include="troll\static\img\tmp\listing-17.jpg" />
+    <Content Include="troll\static\img\tmp\listing-18.jpg" />
+    <Content Include="troll\static\img\tmp\listing-19.jpg" />
+    <Content Include="troll\static\img\tmp\listing-2.jpg" />
+    <Content Include="troll\static\img\tmp\listing-20.jpg" />
+    <Content Include="troll\static\img\tmp\listing-21.jpg" />
+    <Content Include="troll\static\img\tmp\listing-22.jpg" />
+    <Content Include="troll\static\img\tmp\listing-23.jpg" />
+    <Content Include="troll\static\img\tmp\listing-24.jpg" />
+    <Content Include="troll\static\img\tmp\listing-3.jpg" />
+    <Content Include="troll\static\img\tmp\listing-4.jpg" />
+    <Content Include="troll\static\img\tmp\listing-5.jpg" />
+    <Content Include="troll\static\img\tmp\listing-6.jpg" />
+    <Content Include="troll\static\img\tmp\listing-7.jpg" />
+    <Content Include="troll\static\img\tmp\listing-8.jpg" />
+    <Content Include="troll\static\img\tmp\listing-9.jpg" />
+    <Content Include="troll\static\img\tmp\location-1.jpg" />
+    <Content Include="troll\static\img\tmp\location-2.jpg" />
+    <Content Include="troll\static\img\tmp\location-3.jpg" />
+    <Content Include="troll\static\img\tmp\location-4.jpg" />
+    <Content Include="troll\static\img\tmp\location-5.jpg" />
+    <Content Include="troll\static\img\tmp\location-6.jpg" />
+    <Content Include="troll\static\img\tmp\menu-1.jpg" />
+    <Content Include="troll\static\img\tmp\menu-2.jpg" />
+    <Content Include="troll\static\img\tmp\menu-3.jpg" />
+    <Content Include="troll\static\img\tmp\menu-4.jpg" />
+    <Content Include="troll\static\img\tmp\menu-5.jpg" />
+    <Content Include="troll\static\img\tmp\menu-6.jpg" />
+    <Content Include="troll\static\img\tmp\partner-1.png" />
+    <Content Include="troll\static\img\tmp\partner-2.png" />
+    <Content Include="troll\static\img\tmp\partner-3.png" />
+    <Content Include="troll\static\img\tmp\partner-4.png" />
+    <Content Include="troll\static\img\tmp\partner-5.png" />
+    <Content Include="troll\static\img\tmp\pricing-1.jpg" />
+    <Content Include="troll\static\img\tmp\service-1.jpg" />
+    <Content Include="troll\static\img\tmp\service-2.jpg" />
+    <Content Include="troll\static\img\tmp\service-3.jpg" />
+    <Content Include="troll\static\img\tmp\service-4.jpg" />
+    <Content Include="troll\static\img\tmp\service-5.jpg" />
+    <Content Include="troll\static\img\tmp\service-6.jpg" />
+    <Content Include="troll\static\img\tmp\service-7.jpg" />
+    <Content Include="troll\static\img\tmp\service-8.jpg" />
+    <Content Include="troll\static\img\tmp\service-9.jpg" />
+    <Content Include="troll\static\img\tmp\user-1.jpg" />
+    <Content Include="troll\static\img\tmp\user-10.jpg" />
+    <Content Include="troll\static\img\tmp\user-2.jpg" />
+    <Content Include="troll\static\img\tmp\user-3.jpg" />
+    <Content Include="troll\static\img\tmp\user-4.jpg" />
+    <Content Include="troll\static\img\tmp\user-5.jpg" />
+    <Content Include="troll\static\img\tmp\user-6.jpg" />
+    <Content Include="troll\static\img\tmp\user-7.jpg" />
+    <Content Include="troll\static\img\tmp\user-8.jpg" />
+    <Content Include="troll\static\img\tmp\user-9.jpg" />
+    <Content Include="troll\static\img\tmp\user-large-1.jpg" />
+    <Content Include="troll\static\img\tmp\user-large-2.jpg" />
+    <Content Include="troll\static\img\tmp\user-large-3.jpg" />
+    <Content Include="troll\static\img\tmp\user-large-4.jpg" />
+    <Content Include="troll\static\img\tmp\user-large-5.jpg" />
+    <Content Include="troll\static\img\tmp\user-large-6.jpg" />
+    <Content Include="troll\static\img\tmp\user-large-7.jpg" />
+    <Content Include="troll\static\img\tmp\user-large-8.jpg" />
+    <Content Include="troll\static\img\tmp\user-large-9.jpg" />
+    <Content Include="troll\static\js\bootstrap.js" />
+    <Content Include="troll\static\js\bootstrap.min.js" />
+    <Content Include="troll\static\js\chartist.js" />
+    <Content Include="troll\static\js\chartist.min.js" />
+    <Content Include="troll\static\js\explorer-map-search.js" />
+    <Content Include="troll\static\js\explorer.js" />
+    <Content Include="troll\static\js\google-map-infobox.js" />
+    <Content Include="troll\static\js\google-map-infobox.min.js" />
+    <Content Include="troll\static\js\google-map-markerclusterer.js" />
+    <Content Include="troll\static\js\google-map-richmarker.js" />
+    <Content Include="troll\static\js\google-map-richmarker.min.js" />
+    <Content Include="troll\static\js\google-map.js" />
+    <Content Include="troll\static\js\jquery.affix.js" />
+    <Content Include="troll\static\js\jquery.inlinesvg.min.js" />
+    <Content Include="troll\static\js\jquery.js" />
+    <Content Include="troll\static\js\jquery.raty.js" />
+    <Content Include="troll\static\js\jquery.scrollTo.js" />
+    <Content Include="troll\static\js\jquery.scrollTo.min.js" />
+    <Content Include="troll\static\js\jquery.trackpad-scroll-emulator.min.js" />
+    <Content Include="troll\static\js\nouislider.js" />
+    <Content Include="troll\static\js\nouislider.min.js" />
+    <Content Include="troll\static\js\particles.min.js" />
+    <Content Include="troll\static\js\tether.js" />
+    <Content Include="troll\static\js\tether.min.js" />
+    <Content Include="troll\static\js\wNumb.js" />
+    <Content Include="troll\static\libraries\slick\ajax-loader.gif" />
+    <Content Include="troll\static\libraries\slick\config.rb" />
+    <Content Include="troll\static\libraries\slick\fonts\slick.eot" />
+    <Content Include="troll\static\libraries\slick\fonts\slick.svg" />
+    <Content Include="troll\static\libraries\slick\fonts\slick.ttf" />
+    <Content Include="troll\static\libraries\slick\fonts\slick.woff" />
+    <Content Include="troll\static\libraries\slick\slick-theme.css" />
+    <Content Include="troll\static\libraries\slick\slick-theme.less" />
+    <Content Include="troll\static\libraries\slick\slick-theme.scss" />
+    <Content Include="troll\static\libraries\slick\slick.css" />
+    <Content Include="troll\static\libraries\slick\slick.js" />
+    <Content Include="troll\static\libraries\slick\slick.less" />
+    <Content Include="troll\static\libraries\slick\slick.min.js" />
+    <Content Include="troll\static\libraries\slick\slick.scss" />
+    <Content Include="troll\static\scss\bootstrap\bootstrap-grid.scss" />
+    <Content Include="troll\static\scss\bootstrap\bootstrap-reboot.scss" />
+    <Content Include="troll\static\scss\bootstrap\bootstrap.scss" />
+    <Content Include="troll\static\scss\bootstrap\mixins\_alert.scss" />
+    <Content Include="troll\static\scss\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="troll\static\scss\bootstrap\mixins\_badge.scss" />
+    <Content Include="troll\static\scss\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="troll\static\scss\bootstrap\mixins\_breakpoints.scss" />
+    <Content Include="troll\static\scss\bootstrap\mixins\_buttons.scss" />
+    <Content Include="troll\static\scss\bootstrap\mixins\_cards.scss" />
+    <Content Include="troll\static\scss\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="troll\static\scss\bootstrap\mixins\_float.scss" />
+    <Content Include="troll\static\scss\bootstrap\mixins\_forms.scss" />
+    <Content Include="troll\static\scss\bootstrap\mixins\_gradients.scss" />
+    <Content Include="troll\static\scss\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="troll\static\scss\bootstrap\mixins\_grid.scss" />
+    <Content Include="troll\static\scss\bootstrap\mixins\_hover.scss" />
+    <Content Include="troll\static\scss\bootstrap\mixins\_image.scss" />
+    <Content Include="troll\static\scss\bootstrap\mixins\_list-group.scss" />
+    <Content Include="troll\static\scss\bootstrap\mixins\_lists.scss" />
+    <Content Include="troll\static\scss\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="troll\static\scss\bootstrap\mixins\_navbar-align.scss" />
+    <Content Include="troll\static\scss\bootstrap\mixins\_pagination.scss" />
+    <Content Include="troll\static\scss\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="troll\static\scss\bootstrap\mixins\_resize.scss" />
+    <Content Include="troll\static\scss\bootstrap\mixins\_screen-reader.scss" />
+    <Content Include="troll\static\scss\bootstrap\mixins\_size.scss" />
+    <Content Include="troll\static\scss\bootstrap\mixins\_table-row.scss" />
+    <Content Include="troll\static\scss\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="troll\static\scss\bootstrap\mixins\_text-hide.scss" />
+    <Content Include="troll\static\scss\bootstrap\mixins\_text-truncate.scss" />
+    <Content Include="troll\static\scss\bootstrap\mixins\_transforms.scss" />
+    <Content Include="troll\static\scss\bootstrap\mixins\_visibility.scss" />
+    <Content Include="troll\static\scss\bootstrap\utilities\_align.scss" />
+    <Content Include="troll\static\scss\bootstrap\utilities\_background.scss" />
+    <Content Include="troll\static\scss\bootstrap\utilities\_borders.scss" />
+    <Content Include="troll\static\scss\bootstrap\utilities\_clearfix.scss" />
+    <Content Include="troll\static\scss\bootstrap\utilities\_display.scss" />
+    <Content Include="troll\static\scss\bootstrap\utilities\_flex.scss" />
+    <Content Include="troll\static\scss\bootstrap\utilities\_float.scss" />
+    <Content Include="troll\static\scss\bootstrap\utilities\_position.scss" />
+    <Content Include="troll\static\scss\bootstrap\utilities\_screenreaders.scss" />
+    <Content Include="troll\static\scss\bootstrap\utilities\_sizing.scss" />
+    <Content Include="troll\static\scss\bootstrap\utilities\_spacing.scss" />
+    <Content Include="troll\static\scss\bootstrap\utilities\_text.scss" />
+    <Content Include="troll\static\scss\bootstrap\utilities\_visibility.scss" />
+    <Content Include="troll\static\scss\bootstrap\_alert.scss" />
+    <Content Include="troll\static\scss\bootstrap\_badge.scss" />
+    <Content Include="troll\static\scss\bootstrap\_breadcrumb.scss" />
+    <Content Include="troll\static\scss\bootstrap\_button-group.scss" />
+    <Content Include="troll\static\scss\bootstrap\_buttons.scss" />
+    <Content Include="troll\static\scss\bootstrap\_card.scss" />
+    <Content Include="troll\static\scss\bootstrap\_carousel.scss" />
+    <Content Include="troll\static\scss\bootstrap\_close.scss" />
+    <Content Include="troll\static\scss\bootstrap\_code.scss" />
+    <Content Include="troll\static\scss\bootstrap\_custom-forms.scss" />
+    <Content Include="troll\static\scss\bootstrap\_custom.scss" />
+    <Content Include="troll\static\scss\bootstrap\_dropdown.scss" />
+    <Content Include="troll\static\scss\bootstrap\_forms.scss" />
+    <Content Include="troll\static\scss\bootstrap\_grid.scss" />
+    <Content Include="troll\static\scss\bootstrap\_images.scss" />
+    <Content Include="troll\static\scss\bootstrap\_input-group.scss" />
+    <Content Include="troll\static\scss\bootstrap\_jumbotron.scss" />
+    <Content Include="troll\static\scss\bootstrap\_list-group.scss" />
+    <Content Include="troll\static\scss\bootstrap\_media.scss" />
+    <Content Include="troll\static\scss\bootstrap\_mixins.scss" />
+    <Content Include="troll\static\scss\bootstrap\_modal.scss" />
+    <Content Include="troll\static\scss\bootstrap\_nav.scss" />
+    <Content Include="troll\static\scss\bootstrap\_navbar.scss" />
+    <Content Include="troll\static\scss\bootstrap\_normalize.scss" />
+    <Content Include="troll\static\scss\bootstrap\_pagination.scss" />
+    <Content Include="troll\static\scss\bootstrap\_popover.scss" />
+    <Content Include="troll\static\scss\bootstrap\_print.scss" />
+    <Content Include="troll\static\scss\bootstrap\_progress.scss" />
+    <Content Include="troll\static\scss\bootstrap\_reboot.scss" />
+    <Content Include="troll\static\scss\bootstrap\_responsive-embed.scss" />
+    <Content Include="troll\static\scss\bootstrap\_tables.scss" />
+    <Content Include="troll\static\scss\bootstrap\_tooltip.scss" />
+    <Content Include="troll\static\scss\bootstrap\_transitions.scss" />
+    <Content Include="troll\static\scss\bootstrap\_type.scss" />
+    <Content Include="troll\static\scss\bootstrap\_utilities.scss" />
+    <Content Include="troll\static\scss\bootstrap\_variables.scss" />
+    <Content Include="troll\static\scss\explorer-blue.scss" />
+    <Content Include="troll\static\scss\explorer-gold.scss" />
+    <Content Include="troll\static\scss\explorer-orange.scss" />
+    <Content Include="troll\static\scss\explorer-purple.scss" />
+    <Content Include="troll\static\scss\explorer-red.scss" />
+    <Content Include="troll\static\scss\explorer-turquoise.scss" />
+    <Content Include="troll\static\scss\explorer.scss" />
+    <Content Include="troll\static\scss\helpers\admin\_footer.scss" />
+    <Content Include="troll\static\scss\helpers\admin\_header.scss" />
+    <Content Include="troll\static\scss\helpers\admin\_sidebar.scss" />
+    <Content Include="troll\static\scss\helpers\admin\_title.scss" />
+    <Content Include="troll\static\scss\helpers\_alerts.scss" />
+    <Content Include="troll\static\scss\helpers\_author.scss" />
+    <Content Include="troll\static\scss\helpers\_avatar.scss" />
+    <Content Include="troll\static\scss\helpers\_box.scss" />
+    <Content Include="troll\static\scss\helpers\_breadcrumbs.scss" />
+    <Content Include="troll\static\scss\helpers\_buttons.scss" />
+    <Content Include="troll\static\scss\helpers\_cards.scss" />
+    <Content Include="troll\static\scss\helpers\_categories.scss" />
+    <Content Include="troll\static\scss\helpers\_comments.scss" />
+    <Content Include="troll\static\scss\helpers\_commons.scss" />
+    <Content Include="troll\static\scss\helpers\_cta.scss" />
+    <Content Include="troll\static\scss\helpers\_demo.scss" />
+    <Content Include="troll\static\scss\helpers\_documents.scss" />
+    <Content Include="troll\static\scss\helpers\_elements.scss" />
+    <Content Include="troll\static\scss\helpers\_faq.scss" />
+    <Content Include="troll\static\scss\helpers\_features.scss" />
+    <Content Include="troll\static\scss\helpers\_filter.scss" />
+    <Content Include="troll\static\scss\helpers\_footer.scss" />
+    <Content Include="troll\static\scss\helpers\_forms.scss" />
+    <Content Include="troll\static\scss\helpers\_forms_checkbox_radio.scss" />
+    <Content Include="troll\static\scss\helpers\_forms_select.scss" />
+    <Content Include="troll\static\scss\helpers\_header.scss" />
+    <Content Include="troll\static\scss\helpers\_hero_carousel.scss" />
+    <Content Include="troll\static\scss\helpers\_hero_image.scss" />
+    <Content Include="troll\static\scss\helpers\_hero_promo.scss" />
+    <Content Include="troll\static\scss\helpers\_hero_simple.scss" />
+    <Content Include="troll\static\scss\helpers\_image_item.scss" />
+    <Content Include="troll\static\scss\helpers\_invoice.scss" />
+    <Content Include="troll\static\scss\helpers\_listings.scss" />
+    <Content Include="troll\static\scss\helpers\_listing_box.scss" />
+    <Content Include="troll\static\scss\helpers\_listing_compare.scss" />
+    <Content Include="troll\static\scss\helpers\_listing_detail.scss" />
+    <Content Include="troll\static\scss\helpers\_listing_hero.scss" />
+    <Content Include="troll\static\scss\helpers\_listing_line.scss" />
+    <Content Include="troll\static\scss\helpers\_listing_row.scss" />
+    <Content Include="troll\static\scss\helpers\_listing_row_medium.scss" />
+    <Content Include="troll\static\scss\helpers\_listing_tile.scss" />
+    <Content Include="troll\static\scss\helpers\_map.scss" />
+    <Content Include="troll\static\scss\helpers\_map_cluster.scss" />
+    <Content Include="troll\static\scss\helpers\_map_detail.scss" />
+    <Content Include="troll\static\scss\helpers\_map_filter.scss" />
+    <Content Include="troll\static\scss\helpers\_map_infobox.scss" />
+    <Content Include="troll\static\scss\helpers\_map_list.scss" />
+    <Content Include="troll\static\scss\helpers\_map_marker.scss" />
+    <Content Include="troll\static\scss\helpers\_map_toolbar.scss" />
+    <Content Include="troll\static\scss\helpers\_modal.scss" />
+    <Content Include="troll\static\scss\helpers\_navigation.scss" />
+    <Content Include="troll\static\scss\helpers\_opening_hours.scss" />
+    <Content Include="troll\static\scss\helpers\_pagination.scss" />
+    <Content Include="troll\static\scss\helpers\_palette.scss" />
+    <Content Include="troll\static\scss\helpers\_partners.scss" />
+    <Content Include="troll\static\scss\helpers\_posts.scss" />
+    <Content Include="troll\static\scss\helpers\_pricing.scss" />
+    <Content Include="troll\static\scss\helpers\_progress.scss" />
+    <Content Include="troll\static\scss\helpers\_promos.scss" />
+    <Content Include="troll\static\scss\helpers\_side.scss" />
+    <Content Include="troll\static\scss\helpers\_sidebar.scss" />
+    <Content Include="troll\static\scss\helpers\_slick.scss" />
+    <Content Include="troll\static\scss\helpers\_sort.scss" />
+    <Content Include="troll\static\scss\helpers\_stats.scss" />
+    <Content Include="troll\static\scss\helpers\_structure.scss" />
+    <Content Include="troll\static\scss\helpers\_tables.scss" />
+    <Content Include="troll\static\scss\helpers\_tabs.scss" />
+    <Content Include="troll\static\scss\helpers\_tags.scss" />
+    <Content Include="troll\static\scss\helpers\_testimonials.scss" />
+    <Content Include="troll\static\scss\helpers\_titles.scss" />
+    <Content Include="troll\static\scss\helpers\_tse.scss" />
+    <Content Include="troll\static\scss\helpers\_variables.scss" />
+    <Content Include="troll\templates\main.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DjangoTest\" />
+    <Folder Include="troll\" />
+    <Folder Include="troll\exHtmls\" />
+    <Folder Include="troll\migrations\" />
+    <Folder Include="troll\static\" />
+    <Folder Include="troll\static\css\" />
+    <Folder Include="troll\static\fonts\" />
+    <Folder Include="troll\static\fonts\font-awesome\" />
+    <Folder Include="troll\static\fonts\font-awesome\css\" />
+    <Folder Include="troll\static\fonts\font-awesome\fonts\" />
+    <Folder Include="troll\static\img\" />
+    <Folder Include="troll\static\img\tmp\" />
+    <Folder Include="troll\static\js\" />
+    <Folder Include="troll\static\libraries\" />
+    <Folder Include="troll\static\libraries\slick\" />
+    <Folder Include="troll\static\libraries\slick\fonts\" />
+    <Folder Include="troll\static\scss\" />
+    <Folder Include="troll\static\scss\bootstrap\" />
+    <Folder Include="troll\static\scss\bootstrap\mixins\" />
+    <Folder Include="troll\static\scss\bootstrap\utilities\" />
+    <Folder Include="troll\static\scss\helpers\" />
+    <Folder Include="troll\static\scss\helpers\admin\" />
+    <Folder Include="troll\templates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="myvenv\">
+      <Id>myvenv</Id>
+      <Version>3.6</Version>
+      <Description>myvenv (Python 3.6 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  {% load staticfiles %}
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link href="{%static  " libraries/slick/slick.css " %}" rel="stylesheet" type="text/css">
+  <link href="{%static  'libraries/slick/slick-theme.css' %}" rel="stylesheet" type="text/css">
+  <link href="{%static  'css/trackpad-scroll-emulator.css' %}" rel="stylesheet" type="text/css">
+  <link href="{%static  'css/chartist.min.css' %}" rel="stylesheet" type="text/css">
+  <link href="{%static  'jquery.raty.css' %}" rel="stylesheet" type="text/css">
+  <link href="{%static  'fonts/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+  <link href="{%static  'css/nouislider.min.css' %}" rel="stylesheet" type="text/css">
+  <link href="{%static  'css/explorer.css' %}" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" type="image/x-icon" href="{%static  'assets/img/favicon.png'%}">
+</head>
+
+<body>
+  <div class="admin-wrapper">
+    <div class="admin-sidebar">
+      <div class="admin-sidebar-header">
+        <div class="admin-sidebar-logo">
+          <a href="admin-dashboard.html">
+              <img src="{%static '/img/logo.svg'%}" class="svg" alt="Home">
+            </a>
+          <a href="admin-dashboard.html" class="admin-sidebar-logo-title">
+              <strong>TROLL</strong>
+              <span>It's Better to Shere</span>
+            </a>
+        </div>
+        <!-- /.admin-sidebar-logo -->
+      </div>
+      <!-- /.admin-sidebar-header -->
+      <div class="sidebar">
+        <div class="widget">
+          <h3 class="widgettitle">Search Friend</h3>
+          <div class="widgetsearch">
+            <form method="get" action="?">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                <input type="text" placeholder="Search the site" class="form-control">
+              </div>
+              <div class="form-group-btn form-group-btn-placeholder-gap">
+                <button type="submit" class="btn btn-primary btn-block">Search</button>
+              </div>
+              <!-- /.form-group -->
+            </form>
+          </div>
+          <!-- /.search -->
+        </div>
+        <!-- /.widget -->
+        <div class="widget">
+          <h3 class="widgettitle">Members</h3>
+          <div class="documents">
+            <a class="document" href="#">
+                          <span>disker@email.com</span>
+                        </a>
+            <a class="document" href="#">
+                          <span>goodjjob@email.com</span>
+                        </a>
+            <a class="document" href="#">
+                          <div class="id-check">goodjjos222@email.com</div>
+                        </a>
+          </div>
+          <!-- /.documents -->
+        </div>
+      </div>
+
+      <!-- /.admin-sidebar-content -->
+    </div>
+    <!-- /.admin-sidebar -->
+    <div class="ytb-main">
+      <div class="admin-page-title">
+        <div class="container-fluid">
+          <h1>Dongha@email.com <small>Your Play List</small></h1>
+          <div class="admin-page-title-actions">
+            <a href="#" class="btn btn-secondary">MyList</a>
+            <a href="#" class="btn btn-secondary">AddLink</a>
+          </div>
+        </div>
+      </div>
+      <!-- /.admin-page-title-actions -->
+        
+      <div class="ytb-content">
+        <div class="sort-options">
+            <ul class="sort-by">
+                <li class="active"><a href="#">Shuffle</a></li>
+                <li><a href="#">Newest</a></li>
+                <li><a href="#">Oldest</a></li>
+            </ul>    
+        </div>
+          <div class="listing-row">
+          <div class="listing-row-inner">
+            <div class="listing-row-image">
+              <iframe id="player" type="text/html" width="240" height="auto" src="http://www.youtube.com/embed/M7lc1UVf-VE?enablejsapi=1&origin=http://example.com" frameborder="0">
+                            </iframe>
+            </div>
+            <div class="listing-row-content">
+              <div class="listing-row-content-header">
+                <h3><a href="#">거짓말</a></h3>
+                <h4>Bigbang</h4>
+              </div>
+              <!-- /.listing-row-content-header -->
+              <div class="listing-row-content-body">
+                User Comments are located in this form...
+              </div>
+              <!-- /.listing-row-content-body -->
+            </div>
+            <!-- /.listing-row-content -->
+          </div>
+          <!-- /.listing-row-inner -->
+        </div>
+        <!-- /.listing-row -->
+        <div class="listing-row">
+          <div class="listing-row-inner">
+            <div class="listing-row-image">
+              <iframe id="player" type="text/html" width="240" height="auto" src="http://www.youtube.com/embed/M7lc1UVf-VE?enablejsapi=1&origin=http://example.com" frameborder="0">
+                            </iframe>
+            </div>
+            <div class="listing-row-content">
+              <div class="listing-row-content-header">
+                <h3><a href="#">거짓말</a></h3>
+                <h4>Bigbang</h4>
+              </div>
+              <!-- /.listing-row-content-header -->
+              <div class="listing-row-content-body">
+                User Comments are located in this form...
+              </div>
+              <!-- /.listing-row-content-body -->
+            </div>
+            <!-- /.listing-row-content -->
+          </div>
+          <!-- /.listing-row-inner -->
+        </div>
+        <!-- /.listing-row -->
+        <div class="listing-row">
+          <div class="listing-row-inner">
+            <div class="listing-row-image">
+              <iframe id="player" type="text/html" width="240" height="auto" src="http://www.youtube.com/embed/M7lc1UVf-VE?enablejsapi=1&origin=http://example.com" frameborder="0">
+                            </iframe>
+            </div>
+            <div class="listing-row-content">
+              <div class="listing-row-content-header">
+                <h3><a href="#">거짓말</a></h3>
+                <h4>Bigbang</h4>
+              </div>
+              <!-- /.listing-row-content-header -->
+              <div class="listing-row-content-body">
+                User Comments are located in this form...
+              </div>
+              <!-- /.listing-row-content-body -->
+            </div>
+            <!-- /.listing-row-content -->
+          </div>
+          <!-- /.listing-row-inner -->
+        </div>
+        <!-- /.listing-row -->
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
